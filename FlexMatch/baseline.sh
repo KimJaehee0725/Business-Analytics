@@ -1,0 +1,11 @@
+python ./src/main.py ./configs/baseline.yaml
+python ./src/main.py ./configs/baseline-threshold:0.7.yaml
+python ./src/main.py ./configs/baseline-threshold:0.5.yaml
+python ./src/main.py ./configs/baseline-threshold:0.3.yaml
+python ./src/main.py ./configs/baseline_k:2.yaml
+python ./src/main.py ./configs/baseline_k:4.yaml
+python ./src/main.py ./configs/baseline_k:8.yaml
+python ./src/main.py ./configs/baseline-lam1:0.1.yaml
+python ./src/main.py ./configs/baseline-lam1:0.5.yaml
+python ./src/main.py ./configs/baseline-k:4-lam1:0.1.yaml
+python ./src/main.py ./configs/baseline-k:4-lam1:0.5.yaml

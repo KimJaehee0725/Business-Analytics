@@ -1,0 +1,25 @@
+# DatasetConfig 
+data_dir            : ./dataset/SSL_data
+num_labeled_data    : 1000
+num_unlabeled_data  : 4000
+
+# TrainerConfig
+batch_size          : 16
+k                   : 1
+test_batch_size     : 128
+total_epoch         : 50
+learning_rate       : 5.0e-5
+model_name          : "microsoft/resnet-18"
+num_classes         : 10
+device              : "cuda:0"
+lam1                : 0.1
+
+# CPLLabelerConfig
+max_threshold       : 0.9
+use_warmup          : True
+nonlinear_mapping   : True
+
+# WandbConfig
+project_name        : FlexMatch
+run_name            : baseline-lam1:0.1
+
